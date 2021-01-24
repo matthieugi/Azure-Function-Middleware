@@ -7,7 +7,7 @@ export interface ContextMiddleware extends Context {
 export type AzureFunctionMiddleware = (context: ContextMiddleware, ...args: any[]) => Promise<void>;
 
 
-export default class Middleware {
+export class Middleware {
     middlewares: (AzureFunctionMiddleware|AzureFunction)[];
 
     constructor() {

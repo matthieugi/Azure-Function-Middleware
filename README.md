@@ -17,11 +17,15 @@ Middleware is a great use for JWT verification, data structure check or other pr
 
 1. Install module
 
-npm install path/to/Middleware
+Clone repo to your local computer.
+git clone https://github.com/matthieugi/Azure-Function-Middleware 
+
+in your Auzre function project, link the module
+npm install path/to/Azure-Function-Middleware
 
 (will soon be published to npm)
 
-import * from azurefunctionmiddleware
+import { AzureFunctionMiddleware, ContextMiddleware, Middleware } from 'azurefunctionmiddleware';
 
 2. Initiate Middleware class
 
