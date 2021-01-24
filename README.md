@@ -9,9 +9,9 @@ The middleware pattern execute functions sequencialy to check or enhance a reque
 Because middleware are executed at runtime when client request is received, you will want to keep all your reusable context out of scope of middlewares (DB initialization, service discovery...).
 Middleware is a great use for JWT verification, data structure check or other prerequisites check. 
 
-+The Middleware class enhance the context object of the request with a next() function used to stack multiple middlewares.
+- The Middleware class enhance the context object of the request with a next() function used to stack multiple middlewares.
 
-+If you detect an Error, Middleware expects that you feed the client response before throwing the error. Therefore, you manage data sent back to client.  
+- If you detect an Error, Middleware expects that you feed the client response before throwing the error. Therefore, you manage data sent back to client.  
 
 ## How to use it 
 
