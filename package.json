@@ -9,5 +9,6 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@azure/functions": "^1.2.2"
-  }
+  },
+  "type": "module"
 }
