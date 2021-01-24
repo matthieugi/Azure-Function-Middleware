@@ -1,0 +1,13 @@
+{
+  "name": "azurefunctionmiddleware",
+  "version": "1.0.0",
+  "description": "Simple Middleware helper for Azure Function",
+  "main": "middleware.ts",
+  "scripts": {
+  },
+  "author": "Matthieu Girard",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@azure/functions": "^1.2.2"
+  }
+}
