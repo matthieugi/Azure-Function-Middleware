@@ -35,13 +35,13 @@ const middleware = new Middleware();
 
 3. define and stack your middlewares
 
-First, you will need to create your middlewares. You should always call context.next() to trigger next element in the stack execution. Here is a simple request logger. ContextMiddleware is a child type of Azure Function "Context" type, enhanced with the next function.
+First, you will need to create your middlewares. You should always call and await context.next() to trigger next element in the stack execution. Here is a simple request logger. ContextMiddleware is a child type of Azure Function "Context" type, enhanced with the next function.
 
 
 ```javascript
 const logger: AzureFunctionMiddleware = async function(context: ContextMiddleware) {
     context.log.info(context.req);
-    context.next();
+    await context.next();
 }
 ```
 
