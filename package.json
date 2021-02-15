@@ -7,10 +7,7 @@
   },
   "author": "Matthieu Girard",
   "license": "GPL-3.0-or-later",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/matthieugi/Azure-Function-Middleware"
-  },
+  "homepage": "https://github.com/matthieugi/Azure-Function-Middleware",
   "dependencies": {
     "@azure/functions": "^1.2.2"
   },
