@@ -10,6 +10,5 @@
   "homepage": "https://github.com/matthieugi/Azure-Function-Middleware",
   "dependencies": {
     "@azure/functions": "^1.2.2"
-  },
-  "type": "module"
+  }
 }
