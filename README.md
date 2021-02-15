@@ -23,7 +23,7 @@ in your Auzre function project, link the module
 ```console
 npm install @matthieugi/azurefunctionmiddleware
 ```
-
+Then import it in your code
 
 ```javascript
 import { AzureFunctionMiddleware, ContextMiddleware, Middleware } from 'azurefunctionmiddleware';
