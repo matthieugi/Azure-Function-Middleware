@@ -19,7 +19,7 @@ jobs:
       - name: Install NPM Packages
         run: npm install
       - name: Typescript Compilation
-        run: npm build
+        run: npm run build
       - name: Package Publication to npmjs.org
         run: npm publish
         env:
