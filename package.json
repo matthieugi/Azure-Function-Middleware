@@ -1,6 +1,6 @@
 {
   "name": "@matthieugi/azurefunctionmiddleware",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple Middleware helper for Azure Function",
   "main": "build/middleware.js",
   "scripts": {
