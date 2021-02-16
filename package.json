@@ -2,13 +2,22 @@
   "name": "@matthieugi/azurefunctionmiddleware",
   "version": "1.0.1",
   "description": "Simple Middleware helper for Azure Function",
-  "main": "middleware.ts",
-  "scripts": {
-  },
+  "main": "build/middleware.js",
+  "scripts": {},
   "author": "Matthieu Girard",
   "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/matthieugi/Azure-Function-Middleware",
+  "types": "build/middleware.d.ts",
   "dependencies": {
     "@azure/functions": "^1.2.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthieugi/Azure-Function-Middleware.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/matthieugi/Azure-Function-Middleware/issues"
   }
 }
