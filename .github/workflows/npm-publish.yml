@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - name: Install NPM Packages
+        run: npm install
       - name: Typescript Compilation
         uses: icrawl/action-tsc@v1
 
