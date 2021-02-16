@@ -4,15 +4,11 @@ export interface ContextMiddleware extends Context {
     next?: () => Promise<void>;
 }
 
-export type AzureFunctionMiddleware = (context: ContextMiddleware, ...args: any[]) => Promise<void>;
+export type AzureFunctionMiddleware = (context: ContextMiddleware, ...args: any[]) => void | Promise<any>;
 
 
 export class Middleware {
-    middlewares: (AzureFunctionMiddleware|AzureFunction)[];
-
-    constructor() {
-        this.middlewares = [];
-    }
+    middlewares: (AzureFunctionMiddleware | AzureFunction)[] = [];
 
     use(func: AzureFunctionMiddleware|AzureFunction) {
         this.middlewares.push(func);
@@ -20,10 +16,10 @@ export class Middleware {
     }
 
     listen() {
-        return (context: ContextMiddleware, ...args) => this.run(context, ...args);
+        return (context: ContextMiddleware, ...args: any[]) => this.run(context, ...args);
     }
 
-    async run(context: ContextMiddleware, ...args) {
+    async run(context: ContextMiddleware, ...args: any[]) {
         let index = 0;
         const middlewares = this.middlewares;
         
