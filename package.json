@@ -1,6 +1,6 @@
 {
   "name": "@matthieugi/azurefunctionmiddleware",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple Middleware helper for Azure Function",
   "main": "build/middleware.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/matthieugi/Azure-Function-Middleware",
   "types": "build/middleware.d.ts",
+  "type": "module",
   "dependencies": {
     "@azure/functions": "^1.2.2"
   },
