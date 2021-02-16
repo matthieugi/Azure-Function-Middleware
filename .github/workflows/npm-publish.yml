@@ -19,7 +19,7 @@ jobs:
       - name: Install NPM Packages
         run: npm install
       - name: Typescript Compilation
-        uses: icrawl/action-tsc@v1
+        run: npm build
       - name: Package Publication to npmjs.org
         run: npm publish
         env:
